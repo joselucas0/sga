@@ -10,6 +10,4 @@ Este é um projeto Django para gerenciar alunos, avaliações e gerar relatório
 
 ## Como Executar
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/sga.git
+Rode o código python manage.py runserver para executar
