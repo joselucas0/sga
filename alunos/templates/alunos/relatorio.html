@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relatório</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Relatório de Alunos</h1>
+        <table>
+            <tr>
+                <th>Aluno</th>
+                <th>Média</th>
+                <th>Status</th>
+            </tr>
+            {% for dado in dados %}
+            <tr>
+                <td>{{ dado.aluno }}</td>
+                <td>{{ dado.media|floatformat:2 }}</td>
+                <td>{% if dado.aprovado %}Aprovado{% else %}Reprovado{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

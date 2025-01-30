@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SGA - Sistema de Gestão de Alunos</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao SGA</h1>
+        <div class="button-container">
+            <a href="{% url 'cadastro_aluno' %}">Cadastrar Aluno</a>
+            <a href="{% url 'cadastro_avaliacao' %}">Lançar Avaliação</a>
+            <a href="{% url 'relatorio' %}">Relatório</a>
+        </div>
+    </div>
+</body>
+</html>
